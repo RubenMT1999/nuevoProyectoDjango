@@ -5,8 +5,14 @@
     <title>INICIO</title>
 </head>
 <body>
-    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Ad cum delectus excepturi minima molestiae mollitia nobis obcaecati odio
-        quae quidem, quis quos ratione recusandae repudiandae sed suscipit, tempora, temporibus vel!</h1>
+    <h1>EJEMPLO</h1>
+
+    <ul>
+    {% for q in Cuestiones%}
+        <li>{{ q.pub_date }}</li>
+        <li>{{ q.question_text }}</li>
+    {% endfor %}
+    </ul>
+
 </body>
 </html>
